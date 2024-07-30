@@ -1,0 +1,153 @@
+/* 5- fontu kullandiktan sonra html'e body'e donelim */
+body{
+    font-family: "Montserrat", sans-serif;
+    padding: 2rem
+}
+
+/* x3 */
+.form-row {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
+
+textarea, input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+form{
+    width: 100%;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    background-color: burlywood;
+    font-size: 1.2rem;
+}
+/* Header bolumu */
+/* 7- */
+header{
+    display: flex; /* title ve mav bloklarini yanyana getirdik */
+    flex-direction: row; /* default'u bu zaten */
+    justify-content: space-between; /*Arda ile linkler kisminin arasini ayirdik*/
+    align-items: center; /* dikeyde ayni hizada gorunmelerini sagladik */
+    background-color: burlywood;
+    border-radius: 5rem;
+    padding: 1rem 2rem; /* ustten alttan 1rem, sagdan soldan 2rem */
+    flex-wrap: wrap; /* ekran kuculdukce yazilar icice gecmesin diye ekledik */
+}
+
+/* 8- Arda ile unvan'i yanyana getirelim */
+header .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* 9-Arda'yı h2 icine yazmistik. h'lerin otomatik margin'i vardir. Onu kaldiralim ki biz belirleyelim */
+header h2{
+    margin: 0;
+}
+
+/* 10-yuvarlak */
+/*a3, a4 icin alta git*/
+main h1 span,header .title span {
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue;
+    border-radius: 50%; /* 50% yumusatma kareyi daire yapar */
+    display: inline-block;
+}
+
+/* 11-sagdaki menu uzerinde calisalim */
+header nav a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+/* 12-sagdaki menudeki linklerin uzerine gelince renkler degissin */
+header nav a:hover {
+    color: bisque;
+}
+
+/* 13- body icini olusturmak icin html'e git, 14 orada */
+
+/* 16-main bolumu */
+main {
+    padding: 5rem 20%;
+    /* resmi ve yazilari etraftan uzaklastirdik */
+    /* ustten alttan 5rem (sabit), sagdan ve soldan 20% verdik */
+}
+
+main .home {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* resmi kucultelim */
+main .profile img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1rem solid burlywood;
+}
+
+/* butonlari duzenleyelim */
+main .button a {
+    background-color: burlywood;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px gray;
+    margin-right: 1rem;
+}
+main .button a:hover {
+    background-color: bisque;
+}
+
+/* 17- footer'i olusturmak icin html'e git. 18 orda */
+
+/* 20- footer bolumu */
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    flex-wrap: wrap;
+}/*index.html bitti*/
+
+/* a4 */
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* a5 - card'la ilgili calisma yapalim */
+main .card{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid burlywood;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 3px 3px 7px burlywood;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+main section{ /* section'lari ekledigimizde aralarinda bosluk olsun */
+    margin-bottom: 4rem;
+}
+/* a6-card bitti. html'e git, a7 orda */
